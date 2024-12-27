@@ -5,13 +5,7 @@
 
 import scrapy
 
-
-class LkeriaCrawlerItem(scrapy.Item):
-    # define the fields for your item here like:
-    # name = scrapy.Field()
-    pass
-
-class AnnouncesItem(scrapy.Item):
+class AnnounceItem(scrapy.Item):
     title = scrapy.Field()
     url = scrapy.Field()
     description = scrapy.Field()
@@ -19,10 +13,9 @@ class AnnouncesItem(scrapy.Item):
     location = scrapy.Field()
     kind = scrapy.Field() # Location ou Vente
     area = scrapy.Field()
-    parts = scrapy.Field()
     pieces = scrapy.Field()
     reference = scrapy.Field()
-    phone_number = scrapy.Field()
+    phone_numbers = scrapy.Field()
     price = scrapy.Field()
 
 class ExpertItem(scrapy.Item):
