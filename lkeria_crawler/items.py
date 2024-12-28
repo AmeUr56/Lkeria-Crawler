@@ -29,12 +29,12 @@ class ExpertItem(scrapy.Item):
     description = scrapy.Field()
     
 class AgenceItem(scrapy.Item):
-    wilaya = scrapy.Field()
     url = scrapy.Field()
     title = scrapy.Field()
     kind = scrapy.Field() # Imobilier ou Administrateur des biens
     phone_number1 = scrapy.Field()
     phone_number2 = scrapy.Field() 
+    phone_number3 = scrapy.Field()
     website = scrapy.Field()
     addresse = scrapy.Field()
     registre = scrapy.Field()
